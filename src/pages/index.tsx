@@ -1,4 +1,5 @@
 import React from "react";
+
 import Icons from "../components/Icons"
 
 export default function index() {
@@ -6,6 +7,4 @@ export default function index() {
     <>
     <Icons type="cart" color="orange" size="small"/>
     </>
-  )
-  
-}
+  ) }
