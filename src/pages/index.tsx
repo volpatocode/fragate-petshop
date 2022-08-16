@@ -1,5 +1,6 @@
 import React from "react";
+import ProductSection from "../components/ProductSection";
 
-export default function Home() {
-  return <>Testeaaaaa</>;
+export default function index() {
+  return <ProductSection title="Mais vendidos"/>
 }
