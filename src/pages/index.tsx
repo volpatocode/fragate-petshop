@@ -1,6 +1,10 @@
 import React from "react";
-import ProductSection from "../components/ProductSection";
+
+import Icons from "../components/Icons"
 
 export default function index() {
-  return <ProductSection title="Mais vendidos"/>
-}
+  return (
+    <>
+    <Icons type="cart" color="orange" size="small"/>
+    </>
+  ) }
