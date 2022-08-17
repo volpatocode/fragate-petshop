@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SingleProduct = styled.div`
   display: flex;
   flex-direction: column;
-  width: 200px;
+  row-gap: 0.5rem;
 `;
 
 export const ProductImage = styled.img``;
@@ -36,4 +36,9 @@ export const ProductBrand = styled.p`
   font-weight: 600;
 `;
 
-export const IconsBox = styled.div``;
+export const IconsBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+`;
