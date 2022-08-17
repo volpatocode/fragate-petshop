@@ -1,5 +1,4 @@
 import React from "react";
-import Icons from "../Icons";
 
 import {
   SingleProduct,
@@ -29,10 +28,7 @@ export default function index({ img, name, price, brand }: productType) {
           <ProductPrice>R$ {price}</ProductPrice>
           <ProductBrand>{brand}</ProductBrand>
         </InfoBox>
-        <IconsBox>
-          <Icons color="orange" size="small" type="favorite" />
-          <Icons color="orange" size="small" type="rating"/>
-        </IconsBox>
+        <IconsBox></IconsBox>
       </ContentBox>
     </SingleProduct>
   );
