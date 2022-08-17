@@ -1,15 +1,10 @@
-import React, { useState } from "react";
-import SingleProduct from "../components/SingleProduct";
+import React from "react";
+
+import Icons from "../components/Icons"
 
 export default function index() {
   return (
-    <>
-      <SingleProduct
-        img="./product.png"
-        name="Nome aleatório"
-        brand="Abibas"
-        price="999,99"
-      />
-    </>
-  );
-}
+      <>
+    <Icons type="cart" color="orange" size="small"/>
+     </>
+  ) }
