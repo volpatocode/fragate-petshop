@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import { Button } from "@mui/material";
+
+export const ButtonMui = styled(Button)`
+    color: pink;
+`
 
 export const SingleProduct = styled.div`
 `;
