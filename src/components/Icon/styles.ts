@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Favorite from "@mui/icons-material/FavoriteBorder";
-import Rating from "@mui/icons-material/Grade";
+import Rating from '@mui/icons-material/Star';
 import Search from "@mui/icons-material/Search";
 import Cart from "@mui/icons-material/ShoppingCart";
 import Profile from "@mui/icons-material/AccountCircle";
@@ -20,7 +20,7 @@ export const FavoriteIcon = styled(Favorite)<Pick<iconsType, "iconcolor">>`
       case "grey":
         return "#707070";
       case "yellow":
-        return "#FFD600";
+        return "#FCDC65";
       default:
         "#FF9A57";
     }
@@ -35,9 +35,12 @@ export const RatingIcon = styled(Rating)<Pick<iconsType, "iconcolor">>`
       case "grey":
         return "#707070";
       case "yellow":
-        return "#FFD600";
+        return "#FCDC65";
+        case "red":
+        return "red";
+
       default:
-        "#FFD600";
+        "#FCDC65";
     }
   }};
 `;
@@ -50,7 +53,7 @@ export const SearchIcon = styled(Search)<Pick<iconsType, "iconcolor">>`
       case "grey":
         return "#707070";
       case "yellow":
-        return "#FFD600";
+        return "#FCDC65";
       default:
         "#707070";
     }
@@ -65,7 +68,7 @@ export const CartIcon = styled(Cart)<Pick<iconsType, "iconcolor">>`
       case "grey":
         return "#707070";
       case "yellow":
-        return "#FFD600";
+        return "#FCDC65";
       default:
         "#FF9A57";
     }
@@ -80,7 +83,7 @@ export const ProfileIcon = styled(Profile)<Pick<iconsType, "iconcolor">>`
       case "grey":
         return "#707070";
       case "yellow":
-        return "#FFD600";
+        return "#FCDC65";
       default:
         "#707070";
     }
@@ -95,7 +98,7 @@ export const ArrowLIcon = styled(ArrowLeft)<Pick<iconsType, "iconcolor">>`
       case "grey":
         return "#707070";
       case "yellow":
-        return "#FFD600";
+        return "#FCDC65";
       default:
         "#707070";
     }
@@ -110,7 +113,7 @@ export const ArrowRIcon = styled(ArrowRight)<Pick<iconsType, "iconcolor">>`
       case "grey":
         return "#707070";
       case "yellow":
-        return "#FFD600";
+        return "#FCDC65";
       default:
         "#707070";
     }
@@ -125,7 +128,7 @@ export const ArrowDIcon = styled(ArrowDown)<Pick<iconsType, "iconcolor">>`
       case "grey":
         return "#707070";
       case "yellow":
-        return "#FFD600";
+        return "#FCDC65";
       default:
         "#707070";
     }

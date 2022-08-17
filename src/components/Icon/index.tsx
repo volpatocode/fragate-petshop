@@ -24,7 +24,7 @@ export type iconsType = {
     | "logo"
     | "arrowDown";
   size?: "small" | "medium" | "large";
-  iconcolor?: "orange" | "grey" | "yellow";
+  iconcolor?: "orange" | "grey" | "yellow" | "red";
 };
 
 export default function index({ type, size, iconcolor }: iconsType) {
