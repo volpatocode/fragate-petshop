@@ -1,10 +1,11 @@
 import React from "react";
-
-import Icons from "../components/Icons"
+import Icons from "../components/Icons";
+import SingleProduct from "../components/SingleProduct";
 
 export default function index() {
   return (
-      <>
-    <Icons type="cart" color="orange" size="small"/>
-     </>
-  ) }
+    <>
+      <SingleProduct img="product.png" brand="abibas" name="Nome aleatório" price="999"/>
+    </>
+  );
+}
