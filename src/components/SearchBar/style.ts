@@ -10,10 +10,11 @@ export const SearchBar= styled.div`
  export const Search = styledMui("div")(({ theme }) => ({
     position: "relative",
     borderRadius: theme.shape.borderRadius,
-    backgroundColor: "rgba(217, 217, 217, 0.45)",
+    backgroundColor: "transparent",
+    border: "1px solid transparent",
     "&:hover": {
-      border: "1px solid #212121",
-      boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+      border: "1px solid rgba(33, 33, 33, 0.5)",
+      boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.1)",
     },
     marginRight: theme.spacing(2),
     marginLeft: 0,

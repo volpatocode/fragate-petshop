@@ -10,7 +10,10 @@ import ArrowDown from "@mui/icons-material/KeyboardArrowDown";
 import { Box } from "@mui/material";
 import { iconsType } from "./index";
 
-export const Icon = styled(Box)``;
+export const Icon = styled(Box)`
+  display: flex;
+  align-items: center;
+`;
 
 export const FavoriteIcon = styled(Favorite)<Pick<iconsType, "iconcolor">>`
   color: ${(props) => {
