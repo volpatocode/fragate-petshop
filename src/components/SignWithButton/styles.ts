@@ -5,15 +5,15 @@ export const SignWithButton = styled(Button)`
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding: 0.6rem 0.8rem;
+  padding: 0.4rem 0.6rem;
+  background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 0.4);
   font-weight: 600;
   width: 100%;
   :hover {
-    background-color: transparent;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.85);
   }
 `;
 
