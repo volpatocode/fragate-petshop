@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Favorite from "@mui/icons-material/FavoriteBorder";
-import Rating from '@mui/icons-material/Star';
+import Rating from "@mui/icons-material/Star";
 import Search from "@mui/icons-material/Search";
 import Cart from "@mui/icons-material/ShoppingCart";
 import Profile from "@mui/icons-material/AccountCircle";
@@ -39,7 +39,7 @@ export const RatingIcon = styled(Rating)<Pick<iconsType, "iconcolor">>`
         return "#707070";
       case "yellow":
         return "#FCDC65";
-        case "red":
+      case "red":
         return "red";
 
       default:

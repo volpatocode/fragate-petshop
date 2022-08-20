@@ -14,7 +14,7 @@ export const SignWithButton = styled(Button)`
   width: 100%;
   border-radius: 8px;
   :hover {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.85);
   }
 `;
 
