@@ -3,7 +3,6 @@ import Favorite from "@mui/icons-material/FavoriteBorder";
 import Rating from '@mui/icons-material/Star';
 import Search from "@mui/icons-material/Search";
 import Cart from "@mui/icons-material/ShoppingCart";
-import Profile from "@mui/icons-material/AccountCircle";
 import ArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import ArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import ArrowDown from "@mui/icons-material/KeyboardArrowDown";
@@ -74,21 +73,6 @@ export const CartIcon = styled(Cart)<Pick<iconsType, "iconcolor">>`
         return "#FCDC65";
       default:
         "#FF9A57";
-    }
-  }};
-`;
-
-export const ProfileIcon = styled(Profile)<Pick<iconsType, "iconcolor">>`
-  color: ${(props) => {
-    switch (props.iconcolor) {
-      case "orange":
-        return "#FF9A57";
-      case "grey":
-        return "#707070";
-      case "yellow":
-        return "#FCDC65";
-      default:
-        "#707070";
     }
   }};
 `;
