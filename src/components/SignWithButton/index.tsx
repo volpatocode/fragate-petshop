@@ -4,7 +4,7 @@ import { SignWithButton, MethodImage } from "./styles";
 
 export type methodsType = {
   method: string;
-  palette: string;
+  palette?: string;
 };
 
 export default function index({ method, palette }: methodsType) {

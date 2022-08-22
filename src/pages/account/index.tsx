@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Circle from "@mui/icons-material/Circle";
 
@@ -6,16 +5,19 @@ import {
   Account,
   AccountFormWrapper,
   AccountImageWrapper,
+  AccountImage,
+  Logo,
   AccountForm,
   InputBox,
   Input,
+  AnchorInfo,
   SubmitButton,
   SignWithMethodBox,
 } from "./styles";
 
 import SignWithButton from "../../components/SignWithButton";
+import Divider from "../../components/Divider";
 
-import { Divider } from "@mui/material";
 export default function index() {
   const [onSignIn, setOnSignIn] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
@@ -24,14 +26,14 @@ export default function index() {
     <Account>
       <AccountFormWrapper>
         <AccountForm>
-          {/* <Image src="/fragate-main-logo.png" width="80px" height="60px" /> */}
           <InputBox>
             <Input id="email" type="email" />
           </InputBox>
           <InputBox>
             <Input id="password" type={showPassword ? "text" : "password"} />
+            <AnchorInfo href="#"> Esqueceu sua senha?</AnchorInfo>
           </InputBox>
-          {onSignIn && (
+          {!onSignIn && (
             <InputBox>
               <Input
                 id="confirmPassword"
@@ -40,17 +42,15 @@ export default function index() {
             </InputBox>
           )}
           <SubmitButton>{onSignIn ? "Entrar" : "Cadastrar"}</SubmitButton>
+          <Divider/>
+          <SignWithMethodBox>
+            <SignWithButton method="google" />
+            <SignWithButton method="facebook" />
+          </SignWithMethodBox>
         </AccountForm>
-        <Divider>
-          <Circle fontSize="small" />
-        </Divider>
-        <SignWithMethodBox>
-          <SignWithButton method="google"/>
-          <SignWithButton method="facebook"/>
-        </SignWithMethodBox>
       </AccountFormWrapper>
       <AccountImageWrapper>
-        <img src="./account-dog.svg"/>
+        <AccountImage src="./account-dog.svg" />
       </AccountImageWrapper>
     </Account>
   );
