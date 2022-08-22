@@ -5,7 +5,6 @@ import {
   RatingIcon,
   SearchIcon,
   CartIcon,
-  ProfileIcon,
   ArrowRIcon,
   ArrowLIcon,
   ArrowDIcon,
@@ -17,7 +16,6 @@ export type iconsType = {
     | "rating"
     | "search"
     | "cart"
-    | "profile"
     | "arrowRight"
     | "arrowLeft"
     | "blog"
@@ -33,7 +31,6 @@ export default function index({ type, size, iconcolor }: iconsType) {
     rating: <RatingIcon fontSize={size} />,
     search: <SearchIcon fontSize={size} />,
     cart: <CartIcon fontSize={size} />,
-    profile: <ProfileIcon fontSize={size} />,
     arrowRight: <ArrowRIcon fontSize={size} />,
     arrowLeft: <ArrowLIcon fontSize={size} />,
     arrowDown: <ArrowDIcon fontSize={size} />,
