@@ -19,7 +19,7 @@ import {
 } from "./styles";
 
 import SignWithButton from "../../components/SignWithButton";
-import Divider from "../../components/Divider";
+import Divider from "../../components/Divider"
 
 export default function index() {
   const [onSignIn, setOnSignIn] = useState(true);

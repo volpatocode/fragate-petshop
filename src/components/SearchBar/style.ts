@@ -11,11 +11,8 @@ export const SearchBar= styled.div`
     position: "relative",
     borderRadius: theme.shape.borderRadius,
     backgroundColor: "transparent",
-    border: "1px solid transparent",
-    "&:hover": {
-      border: "1px solid rgba(33, 33, 33, 0.5)",
-      boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.1)",
-    },
+    border: "1px solid rgba(33, 33, 33, 0.5)",
+    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.1)",
     marginRight: theme.spacing(2),
     marginLeft: 0,
     width: "100%",
