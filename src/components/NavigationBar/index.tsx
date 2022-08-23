@@ -1,10 +1,9 @@
-
 import * as React from "react";
-import PopupState from "../CategoryBar";
 import ProfileIcon from "../ProfileIcon";
-import { Cart, LeftBar, NavBar, TopBar } from "./styles";
+import { Cart, LeftBar, NavBar, SideBar, TopBar } from "./styles";
 import SearchBar from "../SearchBar";
 import IconButton from "../CartButton";
+import CategoryBar from "../CategoryBar";
 
 export default function index() {
   return (
@@ -15,11 +14,19 @@ export default function index() {
           <SearchBar />
           <LeftBar>
             <Cart>
-            <IconButton/>
+              <IconButton />
             </Cart>
             <ProfileIcon></ProfileIcon>
           </LeftBar>
         </TopBar>
+        <SideBar>
+          <CategoryBar />
+          <CategoryBar />
+          <CategoryBar />
+          <CategoryBar />
+          <CategoryBar />
+          <CategoryBar />
+        </SideBar>
       </NavBar>
     </>
   );

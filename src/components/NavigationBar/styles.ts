@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const NavBar = styled.div`
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
 `;
 
 export const TopBar = styled.div`
@@ -29,3 +30,12 @@ export const Cart = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
+export const SideBar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 2rem 0;
+`;
+
+
