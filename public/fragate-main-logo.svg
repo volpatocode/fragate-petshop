@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-<svg width="1920" height="1026" viewBox="0 0 1920 1026" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect x="0.5" y="0.5" width="1919" height="1024.83" fill="url(#pattern0)" stroke="black"/>
-=======
 <svg width="1920" height="1027" viewBox="0 0 1920 1027" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect width="1920" height="1027" fill="url(#pattern0)"/>
->>>>>>> 98784e9d156810f7c692ad0e84c469753fbf6778
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_122_223" transform="translate(-0.185 -0.575535) scale(0.00108259 0.00202624)"/>

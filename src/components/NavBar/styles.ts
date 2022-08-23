@@ -16,11 +16,6 @@ export const NavBarContainer = styled(Container)`
   flex-direction: column;
 `;
 
-export const Logo = styled.img`
-  aspect-ratio: 16 / 9;
-  width: 130px;
-`;
-
 export const MainBar = styled(Box)`
   display: flex;
   justify-content: space-between;

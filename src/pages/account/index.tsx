@@ -20,7 +20,7 @@ import {
 
 import SignWithButton from "../../components/SignWithButton";
 import Divider from "../../components/Divider"
-
+import NavBar from "../../components/NavBar";
 export default function index() {
   const [onSignIn, setOnSignIn] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
@@ -31,6 +31,7 @@ export default function index() {
 
   return (
     <>
+    <NavBar type="account"/>
     <Account>
       <AccountFormWrapper>
         <AccountForm>
