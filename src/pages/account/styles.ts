@@ -3,16 +3,15 @@ import { Box, Button } from "@mui/material";
 import Shown from "@mui/icons-material/Visibility";
 import Hidden from "@mui/icons-material/VisibilityOff";
 
-export const Account = styled(Box)`
+export const PageWrapper = styled(Box)`
   display: flex;
-  flex-direction: row;
-  width: 100vw;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  gap: 3.5rem;
 `;
 
-export const AccountFormWrapper = styled(Box)`
+export const ContentWrapper = styled(Box)`
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -22,11 +21,13 @@ export const AccountFormWrapper = styled(Box)`
   align-items: center;
   gap: 3rem;
   padding: 2rem 3rem;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
 `;
 
 export const AccountImage = styled.img`
   width: 50%;
-  height: 75%;
 `;
 
 export const AccountForm = styled.form`
