@@ -30,6 +30,7 @@ export default function index() {
   };
 
   return (
+    <>
     <Account>
       <AccountFormWrapper>
         <AccountForm>
@@ -71,5 +72,6 @@ export default function index() {
         <AccountImage src="./account-dog.svg" />
       </AccountFormWrapper>
     </Account>
+    </>
   );
 }

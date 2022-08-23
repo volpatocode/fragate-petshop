@@ -17,7 +17,7 @@ export default function index() {
             <Cart>
             <IconButton/>
             </Cart>
-            <ProfileIcon></ProfileIcon>
+            <ProfileIcon/>
           </LeftBar>
         </TopBar>
       </NavBar>
