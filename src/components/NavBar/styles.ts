@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { Box, Container } from "@mui/material";
 import { navbarType } from "./index";
 
-
 export const NavBar = styled(Box)<navbarType>`
   display: flex;
   flex-direction: column;
   padding: ${(props) => (props.type !== "default" ? "1rem 0" : "1rem 0 0 0")};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 1);
 `;
 
 export const NavBarContainer = styled(Container)`
