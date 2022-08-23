@@ -1,8 +1,8 @@
 import React from "react";
-import NavBar from "../components/NavBar";
+import Account from "./account";
 
 export default function index() {
   return (
-    <NavBar type="account" />
-  );
+    <Account/>
+  )
 }

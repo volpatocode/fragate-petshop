@@ -4,12 +4,15 @@ import Circle from "@mui/icons-material/Circle";
 import {
   Account,
   AccountFormWrapper,
-  AccountImageWrapper,
   AccountImage,
-  Logo,
   AccountForm,
   InputBox,
   Input,
+  InputPasswordBox,
+  InputPassword,
+  VisibilityButton,
+  ShownIcon,
+  HiddenIcon,
   AnchorInfo,
   SubmitButton,
   SignWithMethodBox,
@@ -22,7 +25,12 @@ export default function index() {
   const [onSignIn, setOnSignIn] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
 
+  const handleVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
+    <>
     <Account>
       <AccountFormWrapper>
         <AccountForm>
@@ -30,28 +38,40 @@ export default function index() {
             <Input id="email" type="email" />
           </InputBox>
           <InputBox>
-            <Input id="password" type={showPassword ? "text" : "password"} />
+            <InputPasswordBox>
+              <InputPassword
+                id="password"
+                type={showPassword ? "text" : "password"}
+              />
+              <VisibilityButton onClick={() => handleVisibility()}>
+                {showPassword ? <ShownIcon /> : <HiddenIcon />}
+              </VisibilityButton>
+            </InputPasswordBox>
             <AnchorInfo href="#"> Esqueceu sua senha?</AnchorInfo>
           </InputBox>
           {!onSignIn && (
             <InputBox>
-              <Input
-                id="confirmPassword"
-                type={showPassword ? "text" : "password"}
-              />
+              <InputPasswordBox>
+                <InputPassword
+                  id="confirmPassword"
+                  type={showPassword ? "text" : "password"}
+                />
+                <VisibilityButton onClick={() => handleVisibility()}>
+                  {showPassword ? <ShownIcon /> : <HiddenIcon />}
+                </VisibilityButton>
+              </InputPasswordBox>
             </InputBox>
           )}
           <SubmitButton>{onSignIn ? "Entrar" : "Cadastrar"}</SubmitButton>
-          <Divider/>
+          <Divider />
           <SignWithMethodBox>
             <SignWithButton method="google" />
             <SignWithButton method="facebook" />
           </SignWithMethodBox>
         </AccountForm>
-      </AccountFormWrapper>
-      <AccountImageWrapper>
         <AccountImage src="./account-dog.svg" />
-      </AccountImageWrapper>
+      </AccountFormWrapper>
     </Account>
+    </>
   );
 }

@@ -1,6 +1,7 @@
-import { Box, Container } from "@mui/material";
 import styled from "styled-components";
+import { Box, Container } from "@mui/material";
 import { navbarType } from "./index";
+
 
 export const NavBar = styled(Box)<navbarType>`
   display: flex;
