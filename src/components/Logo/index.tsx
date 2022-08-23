@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { Logo } from "./styles";
 
@@ -11,6 +12,10 @@ export default function index({ size }: logoType) {
     medium: "130px",
     large: "165px",
   };
-  
-  return <Logo src="./fragate-main-logo.svg" width={logoWidth[size]} />;
+
+  return (
+    <Link href="/">
+      <Logo src="./fragate-main-logo.svg" width={logoWidth[size]} />
+    </Link>
+  );
 }

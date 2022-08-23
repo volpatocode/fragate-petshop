@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Circle from "@mui/icons-material/Circle";
 
 import {
-  Account,
-  AccountFormWrapper,
+  ContentWrapper,
   AccountImage,
   AccountForm,
   InputBox,
@@ -16,11 +15,12 @@ import {
   AnchorInfo,
   SubmitButton,
   SignWithMethodBox,
+  PageWrapper,
 } from "./styles";
 
 import SignWithButton from "../../components/SignWithButton";
-import Divider from "../../components/Divider"
-
+import Divider from "../../components/Divider";
+import NavBar from "../../components/NavBar";
 export default function index() {
   const [onSignIn, setOnSignIn] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
@@ -30,18 +30,19 @@ export default function index() {
   };
 
   return (
-    <>
-    <Account>
-      <AccountFormWrapper>
+    <PageWrapper>
+      <NavBar type="account" />
+      <ContentWrapper>
         <AccountForm>
           <InputBox>
-            <Input id="email" type="email" />
+            <Input id="email" type="email" placeholder="Digite seu email" />
           </InputBox>
           <InputBox>
             <InputPasswordBox>
               <InputPassword
                 id="password"
                 type={showPassword ? "text" : "password"}
+                placeholder="Digite sua senha"
               />
               <VisibilityButton onClick={() => handleVisibility()}>
                 {showPassword ? <ShownIcon /> : <HiddenIcon />}
@@ -55,6 +56,7 @@ export default function index() {
                 <InputPassword
                   id="confirmPassword"
                   type={showPassword ? "text" : "password"}
+                  placeholder="Confirme sua senha"
                 />
                 <VisibilityButton onClick={() => handleVisibility()}>
                   {showPassword ? <ShownIcon /> : <HiddenIcon />}
@@ -70,8 +72,7 @@ export default function index() {
           </SignWithMethodBox>
         </AccountForm>
         <AccountImage src="./account-dog.svg" />
-      </AccountFormWrapper>
-    </Account>
-    </>
+      </ContentWrapper>
+    </PageWrapper>
   );
 }
