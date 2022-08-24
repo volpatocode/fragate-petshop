@@ -42,4 +42,5 @@ export const CategoryBar = styled(Box)`
   align-items: center;
   justify-content: space-around;
   margin: 0 2rem;
+  padding-bottom: 0.2rem;
 `;

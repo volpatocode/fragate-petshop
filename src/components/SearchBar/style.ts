@@ -4,6 +4,7 @@ import InputBase from "@mui/material/InputBase";
 
 export const SearchBar = styled.div`
   background-color: rgba(217, 217, 217, 0.45);
+
 `;
 
 export const Search = styledMui("div")(({ theme }) => ({
@@ -17,7 +18,7 @@ export const Search = styledMui("div")(({ theme }) => ({
   width: "100%",
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(3),
-    width: "100%",
+    width: "50%",
   },
 }));
 
@@ -35,7 +36,7 @@ export const StyledInputBase = styledMui(InputBase)(({ theme }) => ({
   color: "inherit",
   width: "100%",
   "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
+    padding: theme.spacing(0.8, 0.8, 0.8, 0),
     // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create("width"),
