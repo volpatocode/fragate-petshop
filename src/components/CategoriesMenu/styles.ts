@@ -6,9 +6,9 @@ import Menu from "@mui/material/Menu";
 export const CategoryBarButton = styled(ButtonUnstyled)`
   color: #5f5f5f;
   border: none;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   background-color: transparent;
-  border-bottom: solid 5px transparent;
+  border-bottom: solid 3px transparent;
   font-weight: 400;
   box-shadow: none;
   display: inline-block;
@@ -18,7 +18,7 @@ export const CategoryBarButton = styled(ButtonUnstyled)`
   :after {
     display: block;
     content: "";
-    border-bottom: solid 5px #007FE8;
+    border-bottom: solid 3px #007FE8;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
   }
