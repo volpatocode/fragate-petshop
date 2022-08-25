@@ -12,26 +12,24 @@ export default function index() {
   };
 
   return (
-    <>
-      <ShowcaseCarousel>
-        <Carousel
-          responsive={responsive}
-          showDots={true}
-          renderDotsOutside={false}
-          dotListClass="dots"
-          autoPlay={true}
-          arrows={false}
-          infinite={true}
-          autoPlaySpeed={5000}
-        >
-          <Img src="./Showcase1.svg" />
-          <Img src="./Showcase2.svg" />
-          <Img src="./Showcase3.svg" />
-          <Img src="./Showcase4.svg" />
-          <Img src="./Showcase5.svg" />
-        </Carousel>
-      </ShowcaseCarousel>
-      
-    </>
+    <ShowcaseCarousel>
+      <Carousel
+        responsive={responsive}
+        showDots={true}
+        renderDotsOutside={false}
+        dotListClass="dots"
+        autoPlay={true}
+        arrows={false}
+        infinite={true}
+        autoPlaySpeed={5000}
+        draggable={false}
+      >
+        <Img src="./Showcase1.svg" />
+        <Img src="./Showcase2.svg" />
+        <Img src="./Showcase3.svg" />
+        <Img src="./Showcase4.svg" />
+        <Img src="./Showcase5.svg" />
+      </Carousel>
+    </ShowcaseCarousel>
   );
 }
