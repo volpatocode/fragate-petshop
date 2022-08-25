@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Icon,
+  FavoriteBorderIcon,
   FavoriteIcon,
   RatingIcon,
   SearchIcon,
@@ -12,6 +13,7 @@ import {
 
 export type iconsType = {
   type:
+    | "favoriteBorder"
     | "favorite"
     | "rating"
     | "search"
@@ -27,6 +29,7 @@ export type iconsType = {
 
 export default function index({ type, size, iconcolor }: iconsType) {
   const icons = {
+    favoriteBorder: <FavoriteBorderIcon fontSize={size} />,
     favorite: <FavoriteIcon fontSize={size} />,
     rating: <RatingIcon fontSize={size} />,
     search: <SearchIcon fontSize={size} />,
