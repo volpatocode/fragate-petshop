@@ -22,7 +22,7 @@ export const Post = styled(Box)`
   border-radius: 8px;
 `;
 
-export const PostImage = styled.div`
+export const PostImage = styled(Box)`
   background-color: #f3f3f3;
   width: 50px;
   height: 50px;
