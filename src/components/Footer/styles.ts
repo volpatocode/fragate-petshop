@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 export const Footer = styled(Box)`
   background-color: rgba(255, 255, 255, 1);
+  box-shadow: -3px -3px rgba(0, 0, 0, 0.15);
+  margin-top: 3.5rem;
 `;
 
 export const FooterContainer = styled(Container)`
