@@ -1,17 +1,13 @@
+import { Box } from "@mui/material";
 import styled from "styled-components";
 
-export const ProductSection = styled.div`
+export const ProductSection = styled(Box)`
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
-`;
-
-export const SectionContent = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 4rem;
+  margin-top: 2rem;
 `;
 
 export const SectionTitle = styled.h3`

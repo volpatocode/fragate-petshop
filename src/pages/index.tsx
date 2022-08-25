@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "../components/Footer";
-import PostSection from "../components/PostSection";
+import Home from "../pages/home";
+
 
 export default function index() {
-  return <Footer/>
+  return <Home/>
 }

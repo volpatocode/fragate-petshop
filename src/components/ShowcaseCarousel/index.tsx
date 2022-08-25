@@ -34,6 +34,7 @@ export default function index() {
         arrows={false}
         infinite={true}
         autoPlaySpeed={5000}
+        draggable={false}
       >
         <Img src="./Showcase1.svg" />
         <Img src="./Showcase2.svg" />
