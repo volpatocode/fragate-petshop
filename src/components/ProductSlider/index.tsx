@@ -3,7 +3,7 @@ import * as React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { ProductName } from "../SingleProduct/styles";
-import { Img, ProductSlider, Star, BoxInteration} from "./styles";
+import { Img, ProductSlider, Star, BoxInteration, ProductGallery} from "./styles";
 import Icon from "../Icon";
 
 type productType = {
@@ -19,7 +19,7 @@ export default function index({ name }: productType) {
   };
 
   return (
-    <>
+    <ProductGallery>
       <ProductName>{name}</ProductName>
       <ProductSlider>
         <Carousel
@@ -46,7 +46,8 @@ export default function index({ name }: productType) {
           readOnly
         />
         <Icon type="favoriteBorder" iconcolor="red" size="medium" />
+
       </BoxInteration>
-    </>
+    </ProductGallery>
   );
 }
