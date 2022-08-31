@@ -9,7 +9,8 @@ export const SingleProduct = styled(Box)`
   background-color: rgba(255, 255, 255, 1);
 `;
 
-export const ProductImage = styled.img``;
+export const ProductImage = styled.img`
+`;
 
 export const ContentBox = styled(Box)`
   display: flex;
@@ -26,7 +27,7 @@ export const ProductName = styled.p`
   color: rgba(0, 0, 0, 0.85);
   font-weight: 600;
   font-size: 0.9rem;
-  `;
+`;
 
 export const ProductPrice = styled.p`
   font-size: 1rem;
