@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import Head from "next/head";
+import {UserContextProvider} from "../contexts/UserContext";
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -22,7 +23,9 @@ export default function App({ Component, pageProps }) {
         <title>Fragate</title>
         <link rel="shortcut icon" href="/fragate-title-logo.svg" />
       </Head>
-      <Component {...pageProps} />
+      <UserContextProvider>
+        <Component {...pageProps} />
+      </UserContextProvider>
     </>
   );
 }
