@@ -5,6 +5,15 @@ import StarIcon from '@mui/icons-material/Star';
 export const BoxInteration = styled(Box)`
   display: flex;
   justify-content: space-between;
+  width: 100%;
+`;
+
+export const ProductGallery = styled(Box)`
+  width: 22.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
 `;
 
 export const Star = styled(StarIcon)`
@@ -16,9 +25,7 @@ export const Img = styled.img`
 `;
 
 export const ProductSlider = styled(Box)`
-  height: 387px;
   width: 362px;
-  margin-top: 1rem;
 
   .dots {
     padding-bottom: 1rem;
@@ -40,3 +47,4 @@ export const ProductSlider = styled(Box)`
     background-color: #ff9a57;
   }
 `;
+
